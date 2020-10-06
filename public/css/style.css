@@ -4,6 +4,10 @@ html{
     line-height: 1.5em;
 }
 
+header{
+    margin-bottom: 1em;
+}
+
 header .container{
     display: flex;
     flex-direction: column;
@@ -38,6 +42,7 @@ header a {
 header a:hover,li:hover{
     color: white;
     background-color: #007df7;
+    text-decoration: none;
 }
 header ul li{
     margin: 0.5em 0;
@@ -65,12 +70,42 @@ article .sidebar img{
     margin-right: auto;
 }
 
+.container-center-small{
+    text-align: center;
+    max-width: 400px;
+    margin: 1em auto;
+}
+
+footer #container-weather{
+    border: white solid;
+    border-radius: 25px;
+    max-width: 400px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer  #img-weather{
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+
 footer{
     width: 100%;
     background-color: #007df7;
     text-align: center;
     color: white;
-    font-size: 1.5em;
+    font-size: 1em;
+    padding-top: 1em;
+}
+footer #container-weather{
+    background-color: #007df7;
+}
+
+footer>div,footer>div>div{
+    margin: 0 auto;
 }
 
 @media (min-width:800px){
@@ -108,5 +143,8 @@ footer{
     }
     .container-context{
         padding-left: 10%;
+    }
+    footer #container-weather{
+        flex-direction: row;
     }
 }
