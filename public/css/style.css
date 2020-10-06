@@ -56,14 +56,14 @@ header ul li{
     text-align: center;
 }
 
-article{
+.flex-container{
     display: flex;
     flex-direction: column;
 }
-article p{
+.flex-container p{
     text-align: left;
 }
-article .sidebar img{
+.flex-container .sidebar img{
     max-width: 20%;
     margin: 1em auto;
     margin-left: auto;
@@ -81,8 +81,13 @@ footer #container-weather{
     border-radius: 25px;
     max-width: 400px;
     display: flex;
+    flex-direction: row;
     margin-left: auto;
     margin-right: auto;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+   display: -ms-flexbox;      /* TWEENER - IE 10 */
+   display: -webkit-flex;     /* NEW - Chrome */
 }
 
 footer  #img-weather{
@@ -102,6 +107,8 @@ footer{
 }
 footer #container-weather{
     background-color: #007df7;
+    display: flex;
+    flex-direction: row;
 }
 
 footer>div,footer>div>div{
@@ -136,15 +143,16 @@ footer>div,footer>div>div{
         width:30%;
         text-align: right;
     }
-    article .sidebar img{
+    .flex-container{
+        flex-direction: row;
+    }
+    .flex-container .sidebar img{
         margin: 0;
         width: 100%;
         max-width: 100%;
     }
-    .container-context{
+    #container-context{
         padding-left: 10%;
     }
-    footer #container-weather{
-        flex-direction: row;
-    }
+
 }

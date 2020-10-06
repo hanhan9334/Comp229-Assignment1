@@ -1,6 +1,5 @@
 const express = require("express");
 const path = require('path');
-const weather = require('./src/weather');
 const bodyParser = require("body-parser");
 const https = require('https');
 require('dotenv').config({ path: __dirname + '/.env' })

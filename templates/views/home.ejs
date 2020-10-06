@@ -5,24 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Home</title>
 </head>
 
 <body>
     <%- include("../partials/header") -%>
 
-    <div class="container" id="main-container">
-        <article>
+    <div id="main-container">
+        <div class="flex-container">
             <div class="sidebar">
                 <img src="/images/hanLu.jpg" alt="Han Lu">
             </div>
-            <div class="container-context">
+            <div id="container-context">
                 <h1><%= title %></h1>
                 <p>Hi. My name is Han Lu. You can call me Tony. I'm doing software engineering technology
                     in Centennial College.
                 </p>
             </div>
-        </article>
+        </div>
 
 
     </div>
