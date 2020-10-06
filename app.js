@@ -23,7 +23,7 @@ app.set('views', path.join(__dirname, '/templates/views'));
 //Set routes
 app.get('/', (req, res) => {
     const key = process.env.API_KEY;
-    const url = `https://api.openweathermap.org/data/2.5/weather?&units=metric&q=toronto&appid=${key}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?&units=metric&q=toronto&appid=dbdabe71e7f86543f50f98ddb8e432c1`;
 
     https.get(url, (response) => {
         response.on("data", (data) => {
