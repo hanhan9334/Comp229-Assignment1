@@ -7,43 +7,50 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>Projects</title>
+    <title>Services</title>
 </head>
 
 <body>
     <%- include("../partials/header") -%>
-    <div class="container">
-        <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action active">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
-                    <small>3 days ago</small>
+    <div id="main-container">
+        <h1><%= title %></h1>
+        <div class="card-group">
+            <div class="card">
+                <img src="/images/python-data-visulization.jpeg" class="card-img-top" alt="py-data">
+                <div class="card-body">
+                    <h5 class="card-title">Data Visulization</h5>
+                    <p class="card-text">
+                        This graph is made with Python. The matplotlib is used to create the visualization.
+                        Besides, Pygal is used to emphasize and resize elements.
+
+                    </p>
+                    <p class="card-text"><small class="text-muted">I'm still working on it.</small></p>
                 </div>
-                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                    blandit.</p>
-                <small>Donec id elit non mi porta.</small>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
-                    <small class="text-muted">3 days ago</small>
+            </div>
+            <div class="card">
+                <img src="/images/python-game.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Alien Invadors</h5>
+                    <p class="card-text">
+                        This is game is made with Python. Pygame is used to draw the elements and interactive with user
+                        input.
+                        It is a clone of the popular and classic arcade game created by Tomohiro Nishikado.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Version 1.0 is done.</small></p>
                 </div>
-                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                    blandit.</p>
-                <small class="text-muted">Donec id elit non mi porta.</small>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
-                    <small class="text-muted">3 days ago</small>
+            </div>
+            <div class="card">
+                <img src="/images/web-design.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Web Design</h5>
+                    <p class="card-text">
+                        This web site is a clone of Mazda Canada. It is made with Html and Css.
+                    </p>
+                    <p class="card-text"><small class="text-muted">It is finished.</small></p>
                 </div>
-                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                    blandit.</p>
-                <small class="text-muted">Donec id elit non mi porta.</small>
-            </a>
+            </div>
         </div>
     </div>
-
     <%- include("../partials/footer") -%>
 </body>
 

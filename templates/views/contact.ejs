@@ -12,22 +12,24 @@
 
 <body>
     <%- include("../partials/header") -%>
-    <main class="container-center-small">
-        <h1><%= title %></h1>
-        <p>I will contact you shortly. Thank you.</p>
-        <form action="/contact" method="POST" id="form-contact">
-            <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="First name" name="fName" required>
+    <div id="main-container">
+        <main class="container-center-small">
+            <h1><%= title %></h1>
+            <p>I will contact you shortly. Thank you.</p>
+            <form action="/contact" method="POST" id="form-contact">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First name" name="fName" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name" name="lName" required>
+                    </div>
                 </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Last name" name="lName" required>
-                </div>
-            </div>
-            <input type="email" class="form-control" placeholder="Email" name="email" required>
-            <button id="btn-submit" class="btn btn-primary btn-block btn-long" type="submit">Submit</button>
-        </form>
-    </main>
+                <input type="email" class="form-control" placeholder="Email" name="email" required>
+                <button id="btn-submit" class="btn btn-primary btn-block btn-long" type="submit">Submit</button>
+            </form>
+        </main>
+    </div>
     <%- include("../partials/footer") -%>
     <script src="/js/app.js"></script>
 </body>

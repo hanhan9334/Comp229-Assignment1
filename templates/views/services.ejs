@@ -7,39 +7,47 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>Services</title>
+    <title>Projects</title>
 </head>
 
 <body>
     <%- include("../partials/header") -%>
-    <div class="card-group">
-        <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
+    <div class="container">
+        <h1><%= title %></h1>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Web server set up</h5>
+                    <small>$4.99</small>
+                </div>
+                <p class="mb-1">
+                    Get a Node js web server with 10 routes and a database connected.
+                </p>
+                <small>every one more route for $0.99</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Front-end web design</h5>
+                    <small class="text-muted">$9.99</small>
+                </div>
+                <p class="mb-1">
+                    Get a custmized web page with nice layouts. Css and Javascript will be used to add on the features.
+                </p>
+                <small class="text-muted">one for $5.99 when get more than 10 pages</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Windows app development</h5>
+                    <small class="text-muted">from $99</small>
+                </div>
+                <p class="mb-1">
+                    Get a well performanced and nicely designed Java application. Charges vary on different projects.
+                </p>
+                <small class="text-muted">Prices include fixed fees plus hourly rate.</small>
+            </a>
         </div>
     </div>
+
     <%- include("../partials/footer") -%>
 </body>
 

@@ -4,6 +4,9 @@ html{
     line-height: 1.5em;
 }
 
+h1{
+    text-align: center;
+}
 header{
     margin-bottom: 1em;
 }
@@ -56,6 +59,9 @@ header ul li{
     text-align: center;
 }
 
+.container{
+    max-width: 980px;
+}
 .flex-container{
     display: flex;
     flex-direction: column;
@@ -104,6 +110,7 @@ footer{
     color: white;
     font-size: 1em;
     padding-top: 1em;
+    margin-top: 1em;
 }
 footer #container-weather{
     background-color: #007df7;
