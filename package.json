@@ -13,6 +13,7 @@
     "node": "12.18.2"
   },
   "dependencies": {
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
@@ -20,8 +21,11 @@
     "git": "^0.1.5",
     "http": "0.0.1-security",
     "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.10",
     "nodemon": "^2.0.4",
     "notenv": "^2.0.3",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "validator": "^13.1.17"
   }
 }

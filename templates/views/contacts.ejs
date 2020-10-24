@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Contacts</title>
+</head>
+
+<body>
+    <%- include("../partials/header") -%>
+
+    <div id="main-container">
+        <h1><%= title %></h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Number</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(var count = 0; count < contactList.length; count++) { %>
+                <tr>
+                    <th scope="row"><%= count+1 %></th>
+                    <td><%= contactList[count].name %></td>
+                    <td><%= contactList[count].number %></td>
+                    <td><%= contactList[count].email %></td>
+                    <td>
+                        <a href="contacts/edit/<%= contactList[count]._id %>" class="btn btn-primary">
+                            <i class="fas fa-pencil-alt"></i>Edit</a>
+                    </td>
+                    <td>
+                        <a href="contacts/delete/<%= contactList[count]._id %>" class="btn btn-primary">
+                            <i class="fas fa-pencil-alt"></i>Delete</a>
+                    </td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
